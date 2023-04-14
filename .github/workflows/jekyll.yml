@@ -35,10 +35,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Install Pygment AnyScript highligher
         uses: mamba-org/provision-with-micromamba@main
-        with:
-          environment-file: false
-          environment-name: pygments
-          extra-specs: pygments_anyscript
       - name: Setup Ruby
         uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
         with:
